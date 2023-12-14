@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce2a0e5134234e688be838d0d771156, type: 3}
+  m_Name: BaseGun
+  m_EditorClassIdentifier: 
+  fireRate: 1
+  firePwr: 50
+  reloadTime: 2
+  damage: 2
+  recoilLvl: 0
+  knockBack: 0.1
+  AOE: 0
+  maxAmo: 8
