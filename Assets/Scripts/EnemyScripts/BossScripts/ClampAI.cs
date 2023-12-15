@@ -48,4 +48,14 @@ public class ClampAI : MonoBehaviour
     {
         clampHolder.transform.localScale = new Vector3(size, size, size);
     }
+
+    public void SetClampHealth(float health)
+    {
+        EnemyHealthScript[] healthScripts = clampHolder.GetComponentsInChildren<EnemyHealthScript>();
+
+        for (int i = 0; i < healthScripts.Length; i++)
+        {
+            healthScripts[i].health = health;
+        }
+    }
 }
