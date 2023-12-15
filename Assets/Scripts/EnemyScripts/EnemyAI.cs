@@ -33,7 +33,7 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         transform.rotation = new Quaternion(0, 0, transform.rotation.z, transform.rotation.w);
-        if (false && player != null && canDash)
+        if (player != null && canDash)
         {
             dashTimer += Time.deltaTime;
             target = DashControl(target);

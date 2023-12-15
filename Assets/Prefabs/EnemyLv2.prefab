@@ -76,6 +76,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2314134776984665544, guid: fe819654c163c4641bb36e34217a910e,
         type: 3}
+      propertyPath: dashWindup
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314134776984665544, guid: fe819654c163c4641bb36e34217a910e,
+        type: 3}
+      propertyPath: dashDuration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314134776984665544, guid: fe819654c163c4641bb36e34217a910e,
+        type: 3}
+      propertyPath: dashWinddown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314134776984665544, guid: fe819654c163c4641bb36e34217a910e,
+        type: 3}
       propertyPath: isStatsBased
       value: 1
       objectReference: {fileID: 0}
