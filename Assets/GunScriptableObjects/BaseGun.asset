@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ce2a0e5134234e688be838d0d771156, type: 3}
+  m_Script: {fileID: 11500000, guid: c1aee20aaaf5147688fd1133558ee8c7, type: 3}
   m_Name: BaseGun
   m_EditorClassIdentifier: 
-  fireRate: 1
-  firePwr: 50
-  reloadTime: 2
+  fireRate: 0.5
+  firePwr: 23
+  reloadTime: 1.5
   damage: 2
   recoilLvl: 0
-  knockBack: 0.1
+  knockBack: 0
   AOE: 0
-  maxAmo: 8
+  maxAmo: 6
