@@ -5,13 +5,22 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour
 {
     private Rigidbody rB;
-    public float speed;
+    private float speed;
     public GunSO gunStats;
     // Start is called before the first frame update
     void Start()
     {
         speed = gunStats.firePwr;
         rB = GetComponent<Rigidbody>();
-        rB.AddRelativeForce(transform.forward * speed * Time.deltaTime, ForceMode.Impulse);
+        rB.AddForce(transform.up * speed, ForceMode.Impulse);
+        Debug.Log(speed);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            other.gameObject.GetComponent<EnemyHealthScript>().TakeDamage(gunStats.damage);
+        }
     }
 }

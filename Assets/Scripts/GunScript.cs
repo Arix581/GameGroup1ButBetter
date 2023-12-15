@@ -5,23 +5,60 @@ using UnityEngine;
 public class GunScript : MonoBehaviour
 {
     public GameObject bullet;
-    //public EnemyHealthScript eHS;
-    
+    public GameObject bSpawn;
+    public GunSO gunStats;
+    public float time;
+    public float timer;
+    public bool ableToFire;
+    public float ammo;
+    public float maxAmmo;
+    public float rTimer;
+    public float rTime;
+    public bool reloading;
+
+    private void Start()
+    {
+        time = gunStats.fireRate;
+        timer = time;
+        maxAmmo = gunStats.maxAmo;
+        ammo = maxAmmo;
+        rTime = gunStats.reloadTime;
+        rTimer = rTime;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (ableToFire == false)
         {
-            Instantiate(bullet, gameObject.transform.position, Quaternion.identity);
+            timer -= Time.deltaTime;
+        }
+        
+        if (timer <= 0)
+        {
+            timer = time;
+            ableToFire = true;
+        }
+
+        if (ammo <= 0)
+        {
+            rTimer -= Time.deltaTime;
+            reloading = true;
+            if (rTimer <= 0)
+            {
+                ammo = maxAmmo;
+                rTimer = rTime;
+                reloading = false;
+            }
+        }
+
+        if (Input.GetButton("Fire1") && ableToFire == true && reloading == false)
+        {
+            Instantiate(bullet, bSpawn.transform.position, transform.rotation);
+            ableToFire = false;
+            ammo -= 1;
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-           
-        }
-    }
+    
 }
