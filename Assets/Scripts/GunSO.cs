@@ -13,4 +13,5 @@ public class GunSO : ScriptableObject
     public float knockBack;
     public float AOE;
     public float maxAmo;
+    public float spread;
 }

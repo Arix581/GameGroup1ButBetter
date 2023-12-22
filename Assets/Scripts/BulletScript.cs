@@ -11,7 +11,7 @@ public class BulletScript : MonoBehaviour
     void Start()
     {
         speed = gunStats.firePwr;
-        rB = GetComponent<Rigidbody>();s
+        rB = GetComponent<Rigidbody>();
         rB.AddForce(transform.up * speed, ForceMode.Impulse);
         Debug.Log(speed);
     }
