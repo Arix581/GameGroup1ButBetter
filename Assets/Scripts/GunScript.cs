@@ -15,6 +15,7 @@ public class GunScript : MonoBehaviour
     public float rTimer;
     public float rTime;
     public bool reloading;
+    public float spread;
 
     private void Start()
     {
@@ -24,6 +25,7 @@ public class GunScript : MonoBehaviour
         ammo = maxAmmo;
         rTime = gunStats.reloadTime;
         rTimer = rTime;
+        spread = gunStats.spread;
     }
 
     // Update is called once per frame
@@ -54,7 +56,8 @@ public class GunScript : MonoBehaviour
 
         if (Input.GetButton("Fire1") && ableToFire == true && reloading == false)
         {
-            Instantiate(bullet, bSpawn.transform.position, transform.rotation);
+            Instantiate(bullet, bSpawn.transform.position, Quaternion.Euler(0f, 0f, Random.Range(-spread, spread)));
+            //b.transform.eulerAngles = new Vector3(0f, 0f, Random.Range(-spread, spread));
             ableToFire = false;
             ammo -= 1;
         }
