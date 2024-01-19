@@ -56,7 +56,7 @@ public class GunScript : MonoBehaviour
 
         if (Input.GetButton("Fire1") && ableToFire == true && reloading == false)
         {
-            Instantiate(bullet, bSpawn.transform.position, Quaternion.Euler(0f, 0f, Random.Range(-spread, spread)));
+            Instantiate(bullet, bSpawn.transform.position, Quaternion.Euler(0f, 0f, transform.eulerAngles.z + Random.Range(-spread, spread)));
             //b.transform.eulerAngles = new Vector3(0f, 0f, Random.Range(-spread, spread));
             ableToFire = false;
             ammo -= 1;
