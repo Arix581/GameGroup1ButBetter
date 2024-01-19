@@ -20,4 +20,4 @@ MonoBehaviour:
   knockBack: 0
   AOE: 0
   maxAmo: 6
-  spread: 5
+  spread: 2

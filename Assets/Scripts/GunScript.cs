@@ -16,6 +16,7 @@ public class GunScript : MonoBehaviour
     public float rTime;
     public bool reloading;
     public float spread;
+    public Vector2 mouseInput;
 
     private void Start()
     {
@@ -25,12 +26,13 @@ public class GunScript : MonoBehaviour
         ammo = maxAmmo;
         rTime = gunStats.reloadTime;
         rTimer = rTime;
-        spread = gunStats.spread;
+        spread = gunStats.spread / 2;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (ableToFire == false)
         {
             timer -= Time.deltaTime;
