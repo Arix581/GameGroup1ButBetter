@@ -1095,6 +1095,7 @@ GameObject:
   - component: {fileID: 856702224}
   - component: {fileID: 856702223}
   - component: {fileID: 856702222}
+  - component: {fileID: 856702229}
   m_Layer: 0
   m_Name: DemonPope
   m_TagString: Untagged
@@ -1185,7 +1186,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f7fced8c4b7ad84f9d093122de6eeea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attacks: []
+  attacks:
+  - cooldown: 2
+    timer: 0
+    currentIndex: 0
+    segments:
+    - duration: 0
+      timer: 0
+      contents:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 856702229}
+            m_TargetAssemblyTypeName: 
+            m_MethodName: 
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    inBetweens: []
   currentAttack: 0
   needNewAttack: 1
 --- !u!114 &856702226
@@ -1237,6 +1260,19 @@ Transform:
   - {fileID: 2056132137}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &856702229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856702221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8135f072789f849c5add4d26aa7fc4de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 3849356374156295668, guid: e024953227cf04f2bbd964cdb53a767d, type: 3}
 --- !u!1 &866966951
 GameObject:
   m_ObjectHideFlags: 0
