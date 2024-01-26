@@ -1273,6 +1273,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 3849356374156295668, guid: e024953227cf04f2bbd964cdb53a767d, type: 3}
+  bSpawn: {fileID: 856702221}
+  gunStats: {fileID: 11400000, guid: 6cc7b1c9c3f914d52ac7716e6c7cdb6a, type: 2}
+  time: 0
+  timer: 0
+  ableToFire: 0
+  ammo: 0
+  maxAmmo: 0
+  rTimer: 0
+  rTime: 0
+  reloading: 0
+  spread: 0
+  mouseInput: {x: 0, y: 0}
 --- !u!1 &866966951
 GameObject:
   m_ObjectHideFlags: 0
