@@ -6,6 +6,7 @@ public class GunScript : MonoBehaviour
 {
     public GameObject bullet;
     public GameObject bSpawn;
+    public GameObject randomGun;
     public GunSO gunStats;
     public float time;
     public float timer;
@@ -27,6 +28,7 @@ public class GunScript : MonoBehaviour
         rTime = gunStats.reloadTime;
         rTimer = rTime;
         spread = gunStats.spread / 2;
+        Instantiate(randomGun);
     }
 
     // Update is called once per frame

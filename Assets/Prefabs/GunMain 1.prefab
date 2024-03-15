@@ -41,11 +41,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6446777133705220139}
   - component: {fileID: 410393517487303350}
+  - component: {fileID: -1933912690867551318}
   - component: {fileID: 3930393192674659386}
   - component: {fileID: 5318437581059117272}
   - component: {fileID: 5837489462655268602}
   m_Layer: 0
-  m_Name: GunMain
+  m_Name: GunMain 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,6 +79,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729847444737665026}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &-1933912690867551318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729847444737665026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5cae6701777fc489acb716729e7ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mashPointCounter: 0
+  mashPoints: []
 --- !u!23 &3930393192674659386
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -134,8 +149,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 3849356374156295668, guid: e024953227cf04f2bbd964cdb53a767d, type: 3}
   bSpawn: {fileID: 4693134316771148910}
-  randomGun: {fileID: 729847444737665026, guid: d58de742ec1eaa745bf9d8d8f315a0f7,
-    type: 3}
   gunStats: {fileID: 11400000, guid: 7d4be9e1d32fd4b0b861044aae3adb5e, type: 2}
   time: 0
   timer: 0

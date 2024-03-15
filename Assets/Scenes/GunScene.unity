@@ -512,11 +512,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1914080830}
     m_Modifications:
+    - target: {fileID: 233505704821981999, guid: df8c6500e3fbd4742868e925ef893cd3,
+        type: 3}
+      propertyPath: m_TagString
+      value: MashPoint
+      objectReference: {fileID: 0}
     - target: {fileID: 729847444737665026, guid: df8c6500e3fbd4742868e925ef893cd3,
         type: 3}
       propertyPath: m_Name
       value: GunMain
       objectReference: {fileID: 0}
+    - target: {fileID: 5318437581059117272, guid: df8c6500e3fbd4742868e925ef893cd3,
+        type: 3}
+      propertyPath: randomGun
+      value: 
+      objectReference: {fileID: 729847444737665026, guid: d58de742ec1eaa745bf9d8d8f315a0f7,
+        type: 3}
     - target: {fileID: 6446777133705220139, guid: df8c6500e3fbd4742868e925ef893cd3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -566,6 +577,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938784360367939935, guid: df8c6500e3fbd4742868e925ef893cd3,
+        type: 3}
+      propertyPath: m_TagString
+      value: MashPoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
