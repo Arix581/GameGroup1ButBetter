@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5068473620539842062}
   m_Layer: 7
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,6 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   maxHealth: 10
+  delOnDie: 1
 --- !u!114 &2314134776984665544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,9 +65,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
+  ableToMove: 1
   damage: 1
-  damageInterval: 2.5
-  damageTimer: 0
+  canDash: 0
+  stats: {fileID: 0}
+  dashWindup: 2.5
+  dashSpeed: 9
+  dashDuration: 2
+  dashWinddown: 2
+  target: {x: 0, y: 0, z: 0}
+  dashTimer: 0
 --- !u!33 &2743213038360671378
 MeshFilter:
   m_ObjectHideFlags: 0
